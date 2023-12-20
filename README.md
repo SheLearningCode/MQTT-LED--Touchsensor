@@ -1,3 +1,4 @@
+```
 const int buttonPin = D1;    // Button - auf D1, 3v auf S
 
 const int redPin = D2;       // LED - auf GND, LED G auf D2
@@ -23,7 +24,6 @@ int letzterTouchStatus = 0;
 
 
 void setup() {
-
   pinMode(buttonPin, INPUT);    // Button auf Input setzen
   
   pinMode(redPin, OUTPUT);      // Pins der LED auf Output setzen
@@ -35,14 +35,10 @@ void setup() {
   Serial.begin(115200);         // Geschwindigkeit festlegen, optional, notwendig um Serial.print auszulesen
   
   pinMode(touchSensor, INPUT);
-  
 }
 
-
 void loop() {
- 
   touchStatus = digitalRead(touchSensor); // Status des Touchsensors wird ausgelesen
-
  if (touchStatus != letzterTouchStatus) {  // wenn der Status des Sensors nicht mit dem gespeicherten Wert
     if (touchStatus == HIGH) {          // übereinstimmt, wird 1 hochgezählt
       zaehler++;
@@ -82,3 +78,5 @@ void loop() {
         }
   letzterButtonStatus = buttonStatus;
 }
+
+```
