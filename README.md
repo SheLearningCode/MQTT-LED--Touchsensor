@@ -1,3 +1,6 @@
+This is a MQTT Project using Arduino, couple of sensors and an ESP32 controller. 
+This is basic C code.
+
 ```
 const int buttonPin = D1;    // Button - auf D1, 3v auf S
 
